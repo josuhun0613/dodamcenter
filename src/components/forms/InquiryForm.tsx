@@ -15,6 +15,13 @@ const counselingOptions = [
   '기타',
 ];
 
+function formatPhone(value: string) {
+  const digits = value.replace(/\D/g, '').slice(0, 11);
+  if (digits.length <= 3) return digits;
+  if (digits.length <= 7) return `${digits.slice(0, 3)}-${digits.slice(3)}`;
+  return `${digits.slice(0, 3)}-${digits.slice(3, 7)}-${digits.slice(7)}`;
+}
+
 export default function InquiryForm() {
   const [formData, setFormData] = useState({
     name: '',
@@ -40,6 +47,8 @@ export default function InquiryForm() {
       if (res.ok) {
         setIsSubmitted(true);
         setFormData({ name: '', phone: '', email: '', counselingType: '', message: '' });
+      } else {
+        alert('문의 접수 중 오류가 발생했습니다. 다시 시도해주세요.');
       }
     } catch {
       alert('문의 접수 중 오류가 발생했습니다. 다시 시도해주세요.');
@@ -94,9 +103,10 @@ export default function InquiryForm() {
             id="phone"
             required
             value={formData.phone}
-            onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+            onChange={(e) => setFormData({ ...formData, phone: formatPhone(e.target.value) })}
             className="w-full px-4 py-3 rounded-xl border border-beige-200 bg-white text-black placeholder-beige-300 focus:outline-none focus:ring-2 focus:ring-accent/50 focus:border-accent transition-colors"
             placeholder="010-1234-5678"
+            inputMode="numeric"
           />
         </div>
       </div>
@@ -106,12 +116,12 @@ export default function InquiryForm() {
           이메일
         </label>
         <input
-          type="email"
+          type="text"
           id="email"
           value={formData.email}
           onChange={(e) => setFormData({ ...formData, email: e.target.value })}
           className="w-full px-4 py-3 rounded-xl border border-beige-200 bg-white text-black placeholder-beige-300 focus:outline-none focus:ring-2 focus:ring-accent/50 focus:border-accent transition-colors"
-          placeholder="email@example.com"
+          placeholder="email@example.com (선택사항)"
         />
       </div>
 
