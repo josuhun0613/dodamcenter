@@ -300,7 +300,7 @@ export default function PhotoRibbon() {
 
   return (
     <section ref={containerRef} className="relative h-[350vh]">
-      <div ref={stickyRef} className="sticky top-0 h-screen flex items-center justify-center bg-white pt-40 pb-28" style={{ clipPath: 'inset(0)' }}>
+      <div ref={stickyRef} className="sticky top-0 h-screen flex items-center justify-center bg-white pt-24 pb-16 md:pt-40 md:pb-28" style={{ clipPath: 'inset(0)' }}>
         {/* 3D Carousel (photos only) */}
         <div style={{ perspective: '1200px' }} className="relative z-0">
           <motion.div

@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { useState, useCallback } from 'react';
+import { useState, useCallback, useRef } from 'react';
 import Link from 'next/link';
 
 const programs = [
@@ -49,6 +49,7 @@ const programs = [
 
 export default function ProgramPreview() {
   const [activeIndex, setActiveIndex] = useState(0);
+  const touchStartX = useRef(0);
 
   const navigate = useCallback((direction: 'left' | 'right') => {
     setActiveIndex((prev) => {
@@ -56,6 +57,17 @@ export default function ProgramPreview() {
       return Math.min(programs.length - 1, prev + 1);
     });
   }, []);
+
+  const handleTouchStart = useCallback((e: React.TouchEvent) => {
+    touchStartX.current = e.touches[0].clientX;
+  }, []);
+
+  const handleTouchEnd = useCallback((e: React.TouchEvent) => {
+    const diff = touchStartX.current - e.changedTouches[0].clientX;
+    if (Math.abs(diff) > 50) {
+      navigate(diff > 0 ? 'right' : 'left');
+    }
+  }, [navigate]);
 
   return (
     <section className="bg-beige-50 relative overflow-hidden">
@@ -77,7 +89,7 @@ export default function ProgramPreview() {
       </div>
 
       {/* Header */}
-      <div className="max-w-7xl mx-auto px-6 lg:px-8 pt-24 md:pt-32 relative z-10">
+      <div className="max-w-7xl mx-auto px-6 lg:px-8 pt-16 md:pt-24 lg:pt-32 relative z-10">
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-16">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -126,7 +138,11 @@ export default function ProgramPreview() {
       </div>
 
       {/* 3D Carousel */}
-      <div className="relative pb-16 md:pb-20 z-10">
+      <div
+        className="relative pb-16 md:pb-20 z-10"
+        onTouchStart={handleTouchStart}
+        onTouchEnd={handleTouchEnd}
+      >
         <div
           className="relative mx-auto flex justify-center items-center h-[300px] sm:h-[340px] md:h-[420px] lg:h-[470px]"
           style={{ perspective: '1200px' }}

@@ -78,7 +78,7 @@ export default function ServiceShowcase() {
   return (
     <section
       ref={sectionRef}
-      className={`py-24 md:py-32 transition-colors duration-700 ease-in-out ${
+      className={`py-16 md:py-24 lg:py-32 transition-colors duration-700 ease-in-out ${
         isScrolled ? 'bg-beige-100' : 'bg-white'
       }`}
     >
