@@ -5,7 +5,7 @@ import Button from '@/components/shared/Button';
 export const metadata: Metadata = {
   title: '개인상담',
   description:
-    '1:1 맞춤 심리상담으로 우울, 불안, 스트레스, 자존감, 정체성 문제를 전문적으로 다룹니다. 도담센터 개인상담 안내.',
+    '1:1 맞춤 심리상담으로 우울, 불안, 스트레스, 자존감, 정체성 문제를 전문적으로 다룹니다. 도담상담센터 개인상담 안내.',
 };
 
 const features = [
@@ -256,7 +256,7 @@ export default function IndividualCounselingPage() {
               </h2>
               <p className="mt-6 text-lg text-beige-200 max-w-xl mx-auto">
                 상담에 대한 궁금한 점이 있으시면 부담 없이 문의해 주세요.
-                도담센터가 당신의 변화를 함께 하겠습니다.
+                도담상담센터가 당신의 변화를 함께 하겠습니다.
               </p>
               <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
                 <Button href="/contact" size="lg">

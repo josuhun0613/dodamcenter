@@ -6,7 +6,7 @@ import { SITE_CONFIG } from '@/lib/constants';
 
 export const metadata: Metadata = {
   title: '상담 문의',
-  description: '도담센터 상담 문의. 전문 상담사가 정성껏 답변드립니다.',
+  description: '도담상담센터 상담 문의. 전문 상담사가 정성껏 답변드립니다.',
 };
 
 export default function ContactPage() {

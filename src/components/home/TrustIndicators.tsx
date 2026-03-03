@@ -73,7 +73,7 @@ export default function TrustIndicators() {
         >
           <span className="text-[11px] tracking-[0.4em] text-white/55 uppercase">Trust</span>
           <h2 className="mt-4 text-3xl sm:text-4xl md:text-5xl font-bold text-white">
-            숫자로 보는 도담센터
+            숫자로 보는 도담상담센터
           </h2>
         </motion.div>
 

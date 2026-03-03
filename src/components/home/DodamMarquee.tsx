@@ -13,7 +13,7 @@ export default function DodamMarquee() {
             className="text-3xl sm:text-4xl md:text-7xl lg:text-8xl italic mx-6 sm:mx-10 md:mx-16 select-none text-beige-200 tracking-wide"
             style={{ fontFamily: 'var(--font-script)' }}
           >
-            dodam center
+            dodam counseling center
           </span>
         ))}
       </div>

@@ -256,7 +256,7 @@ export default function CoupleCounselingPage() {
               </h2>
               <p className="mt-6 text-lg text-beige-200 max-w-xl mx-auto">
                 관계에 대한 고민을 더 이상 혼자 안고 있지 마세요.
-                도담센터가 두 사람의 더 나은 내일을 함께 만들어 갑니다.
+                도담상담센터가 두 사람의 더 나은 내일을 함께 만들어 갑니다.
               </p>
               <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
                 <Button href="/contact" size="lg">

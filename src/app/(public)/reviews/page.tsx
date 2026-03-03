@@ -4,7 +4,7 @@ import ReviewCard from '@/components/reviews/ReviewCard';
 
 export const metadata: Metadata = {
   title: '상담 후기',
-  description: '도담센터 상담을 경험한 내담자분들의 솔직한 후기입니다.',
+  description: '도담상담센터 상담을 경험한 내담자분들의 솔직한 후기입니다.',
 };
 
 const sampleReviews = [
@@ -36,7 +36,7 @@ const sampleReviews = [
     id: '4',
     clientInitial: '정○○',
     counselingType: '개인상담',
-    content: '자존감이 낮아서 항상 남의 눈치를 보며 살았는데, 상담을 통해 제 가치를 인정하는 법을 배웠습니다. 8회 상담 후 확실히 제 삶의 주인이 된 느낌이에요. 도담센터에 정말 감사합니다.',
+    content: '자존감이 낮아서 항상 남의 눈치를 보며 살았는데, 상담을 통해 제 가치를 인정하는 법을 배웠습니다. 8회 상담 후 확실히 제 삶의 주인이 된 느낌이에요. 도담상담센터에 정말 감사합니다.',
     rating: 5,
     createdAt: '2025.10.22',
   },
@@ -87,7 +87,7 @@ export default function ReviewsPage() {
                 상담 후기
               </h1>
               <p className="mt-6 text-lg md:text-xl text-black-light leading-relaxed">
-                도담센터와 함께 변화를 경험한 분들의 이야기입니다.
+                도담상담센터와 함께 변화를 경험한 분들의 이야기입니다.
               </p>
             </div>
           </AnimatedSection>

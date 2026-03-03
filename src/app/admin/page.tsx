@@ -49,7 +49,7 @@ export default function AdminDashboard() {
     <div>
       <div className="mb-8">
         <h1 className="text-2xl font-bold text-black">대시보드</h1>
-        <p className="text-black-light mt-1">도담센터 관리자 페이지에 오신 것을 환영합니다.</p>
+        <p className="text-black-light mt-1">도담상담센터 관리자 페이지에 오신 것을 환영합니다.</p>
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">

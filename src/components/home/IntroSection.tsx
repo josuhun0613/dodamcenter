@@ -43,7 +43,7 @@ export default function IntroSection() {
               마음의 변화가<br />시작되는 곳
             </h2>
             <p className="mt-6 text-lg text-black-light max-w-2xl mx-auto leading-relaxed">
-              도담센터는 20~30대 청년의 심리적 건강과 성장을 전문적으로 지원합니다.
+              도담상담센터는 20~30대 청년의 심리적 건강과 성장을 전문적으로 지원합니다.
               검증된 상담사와 체계적인 프로그램으로 당신만의 변화를 이끌어냅니다.
             </p>
           </div>

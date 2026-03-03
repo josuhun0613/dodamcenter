@@ -75,7 +75,7 @@ export default function BrandStory() {
               </h2>
 
               <p className="mt-6 text-base md:text-lg text-white/80 leading-relaxed max-w-md">
-                도담센터는 20~30대 청년의 심리적 건강과 성장을 전문적으로 지원합니다.
+                도담상담센터는 20~30대 청년의 심리적 건강과 성장을 전문적으로 지원합니다.
                 검증된 상담사와 체계적인 프로그램으로 당신만의 변화를 이끌어냅니다.
               </p>
 

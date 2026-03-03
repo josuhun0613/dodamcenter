@@ -257,7 +257,7 @@ export default function FamilyCounselingPage() {
               </h2>
               <p className="mt-6 text-lg text-beige-200 max-w-xl mx-auto">
                 가족 안에서의 어려움, 더 이상 혼자 감당하지 마세요.
-                도담센터가 가족 모두의 행복한 변화를 함께 하겠습니다.
+                도담상담센터가 가족 모두의 행복한 변화를 함께 하겠습니다.
               </p>
               <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
                 <Button href="/contact" size="lg">

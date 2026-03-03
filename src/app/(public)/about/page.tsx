@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 };
 
 const milestones = [
-  { year: '2020', title: '도담센터 설립', description: '청년 심리상담 전문 센터로 출발' },
+  { year: '2020', title: '도담상담센터 설립', description: '청년 심리상담 전문 센터로 출발' },
   { year: '2021', title: '온라인 상담 시스템 도입', description: '비대면 시대에 맞춘 온라인 상담 플랫폼 구축' },
   { year: '2022', title: '성장 프로그램 런칭', description: '자기개발, 퍼스널 브랜딩 프로그램 시작' },
   { year: '2023', title: '누적 상담 3,000건 돌파', description: '청년 상담 분야 신뢰도 1위 달성' },
@@ -33,10 +33,10 @@ export default function AboutPage() {
             <div className="max-w-3xl">
               <span className="text-sm tracking-[0.2em] uppercase font-medium text-accent">About Us</span>
               <h1 className="mt-4 text-4xl md:text-5xl lg:text-6xl font-bold text-black leading-tight">
-                도담센터를<br />소개합니다
+                도담상담센터를<br />소개합니다
               </h1>
               <p className="mt-6 text-lg md:text-xl text-black-light leading-relaxed">
-                도담센터는 &apos;도담도담&apos;이라는 순우리말에서 이름을 따왔습니다.
+                도담상담센터는 &apos;도담도담&apos;이라는 순우리말에서 이름을 따왔습니다.
                 아이가 탈 없이 잘 자라는 모양을 뜻하는 이 단어처럼,
                 우리는 청년들이 건강하게 성장할 수 있도록 돕습니다.
               </p>
@@ -68,7 +68,7 @@ export default function AboutPage() {
                 자신만의 길을 찾아가는 것은 결코 쉬운 일이 아닙니다.
               </p>
               <p className="mt-4 text-black-light leading-relaxed">
-                도담센터는 단순히 문제를 해결하는 것을 넘어,
+                도담상담센터는 단순히 문제를 해결하는 것을 넘어,
                 청년들이 자신의 가능성을 발견하고 삶을 주도적으로 설계할 수 있도록
                 전문적인 심리 상담과 성장 프로그램을 제공합니다.
               </p>
@@ -83,7 +83,7 @@ export default function AboutPage() {
           <AnimatedSection>
             <div className="text-center mb-16">
               <span className="text-sm tracking-[0.2em] uppercase font-medium text-accent">History</span>
-              <h2 className="mt-3 text-3xl md:text-4xl font-semibold text-black">도담센터의 발자취</h2>
+              <h2 className="mt-3 text-3xl md:text-4xl font-semibold text-black">도담상담센터의 발자취</h2>
             </div>
           </AnimatedSection>
 

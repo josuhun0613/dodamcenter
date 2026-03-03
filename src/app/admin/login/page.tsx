@@ -40,7 +40,7 @@ export default function AdminLoginPage() {
     <div className="min-h-screen flex items-center justify-center bg-beige-50 px-6">
       <div className="w-full max-w-md">
         <div className="text-center mb-8">
-          <h1 className="text-2xl font-bold text-black">도담센터 관리자</h1>
+          <h1 className="text-2xl font-bold text-black">도담상담센터 관리자</h1>
           <p className="text-black-light mt-2">관리자 계정으로 로그인하세요.</p>
         </div>
 

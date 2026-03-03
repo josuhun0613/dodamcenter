@@ -36,7 +36,7 @@ export default function HeroSection() {
           transition={{ duration: 1, delay: 0.3 }}
           className="text-[11px] md:text-xs tracking-[0.4em] text-white/80 uppercase mb-6"
         >
-          Dodam Center
+          Dodam Counseling Center
         </motion.span>
 
         <motion.h1
@@ -45,9 +45,9 @@ export default function HeroSection() {
           transition={{ duration: 1, delay: 0.6 }}
           className="text-3xl sm:text-4xl md:text-7xl lg:text-8xl font-bold text-white text-center leading-[1.1] tracking-tight"
         >
-          청년을 위한
+          도담, 성장의
           <br />
-          프로젝트
+          기반을 세우는 곳
         </motion.h1>
 
         <motion.p
@@ -56,9 +56,9 @@ export default function HeroSection() {
           transition={{ duration: 1, delay: 0.9 }}
           className="mt-8 text-base md:text-lg text-white/70 text-center max-w-lg leading-relaxed"
         >
-          당신의 내면의 가능성을 발견하고,
+          내면의 안정과 삶의 방향을
           <br className="hidden sm:inline" />
-          더 나은 내일을 함께 설계합니다.
+          함께 세우는 상담센터
         </motion.p>
 
         <motion.div

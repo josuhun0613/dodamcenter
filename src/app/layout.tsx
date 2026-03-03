@@ -8,7 +8,7 @@ export const metadata: Metadata = {
     template: `%s | ${SITE_CONFIG.name}`,
   },
   description: SITE_CONFIG.description,
-  keywords: ['심리상담', '청년상담', '온라인상담', '개인상담', '커플상담', '가족상담', '자기성장', '퍼스널브랜딩', '도담센터'],
+  keywords: ['심리상담', '청년상담', '온라인상담', '개인상담', '커플상담', '가족상담', '자기성장', '퍼스널브랜딩', '도담상담센터'],
   authors: [{ name: SITE_CONFIG.name }],
   openGraph: {
     type: 'website',

@@ -5,7 +5,7 @@ import { counselorsData } from '@/data/counselors';
 
 export const metadata: Metadata = {
   title: '전문 상담사',
-  description: '도담센터의 전문 상담사를 소개합니다. 석·박사 학위와 공인 자격증을 보유한 전문가들이 함께합니다.',
+  description: '도담상담센터의 전문 상담사를 소개합니다. 석·박사 학위와 공인 자격증을 보유한 전문가들이 함께합니다.',
 };
 
 export default function CounselorsPage() {
