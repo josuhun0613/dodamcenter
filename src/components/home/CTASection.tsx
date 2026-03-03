@@ -13,7 +13,7 @@ export default function CTASection() {
   const bgY = useTransform(scrollYProgress, [0, 1], ['0%', '20%']);
 
   return (
-    <section ref={ref} className="relative h-[80vh] md:h-screen flex items-center overflow-hidden">
+    <section ref={ref} className="relative h-[80vh] md:h-screen flex items-center overflow-hidden bg-dark">
       {/* Parallax Background */}
       <motion.div style={{ y: bgY }} className="absolute inset-0">
         <div

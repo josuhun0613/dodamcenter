@@ -13,8 +13,8 @@ export default function BrandStory() {
   });
 
   // Image expands: starts small with rounded corners, grows to full-bleed
-  const img1Scale = useTransform(s1Progress, [0.05, 0.45], [0.6, 1]);
-  const img1Radius = useTransform(s1Progress, [0.05, 0.45], [24, 0]);
+  const img1Scale = useTransform(s1Progress, [0, 0.35], [0.85, 1]);
+  const img1Radius = useTransform(s1Progress, [0, 0.35], [24, 0]);
 
   // Text appears all at once after image is mostly expanded
   const [showText, setShowText] = useState(false);
@@ -35,9 +35,9 @@ export default function BrandStory() {
   const img2Opacity = useTransform(s2Progress, [0.05, 0.25], [0, 1]);
 
   return (
-    <section className="relative">
+    <section className="relative bg-white">
       {/* Section 1: Expanding image on scroll */}
-      <div ref={section1Ref} className="relative h-[250vh]" data-header-theme="dark">
+      <div ref={section1Ref} className="relative h-[180vh]" data-header-theme="dark">
         <div className="sticky top-0 h-screen flex items-center justify-center overflow-hidden bg-white">
           {/* Expanding image container */}
           <motion.div
@@ -106,7 +106,7 @@ export default function BrandStory() {
       {/* Section 2: Split image + text */}
       <div ref={section2Ref} className="grid grid-cols-1 lg:grid-cols-2 min-h-screen">
         {/* Left - Image reveals by sliding up */}
-        <div className="relative h-[60vh] lg:h-auto overflow-hidden">
+        <div className="relative h-[60vh] lg:h-auto overflow-hidden bg-dark">
           <motion.div
             style={{ y: img2Y, scale: img2Scale, opacity: img2Opacity }}
             className="absolute inset-0"
