@@ -34,7 +34,7 @@ export default function CTASection() {
           transition={{ duration: 0.8 }}
         >
           <span className="text-[11px] tracking-[0.4em] text-white/55 uppercase">Start Your Journey</span>
-          <h2 className="mt-6 text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-[1.15]">
+          <h2 className="mt-6 text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold text-white leading-[1.15]">
             지금, 변화의 첫 걸음을
             <br />
             시작하세요

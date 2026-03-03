@@ -16,7 +16,7 @@ export default function HeroSection() {
   const scale = useTransform(scrollYProgress, [0, 1], [1, 1.15]);
 
   return (
-    <section ref={ref} className="relative h-screen overflow-hidden" data-header-theme="dark">
+    <section ref={ref} className="relative h-dvh overflow-hidden" data-header-theme="dark">
       {/* Parallax Background */}
       <motion.div style={{ y, scale }} className="absolute inset-0">
         <div
@@ -43,7 +43,7 @@ export default function HeroSection() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.6 }}
-          className="text-5xl md:text-7xl lg:text-8xl font-bold text-white text-center leading-[1.1] tracking-tight"
+          className="text-3xl sm:text-4xl md:text-7xl lg:text-8xl font-bold text-white text-center leading-[1.1] tracking-tight"
         >
           청년을 위한
           <br />

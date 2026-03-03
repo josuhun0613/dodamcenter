@@ -16,7 +16,7 @@ export default function CounselorCard({
   bio,
 }: CounselorCardProps) {
   return (
-    <div className="bg-white rounded-2xl border border-beige-200 p-8 transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
+    <div className="bg-white rounded-2xl border border-beige-200 p-5 sm:p-6 md:p-8 transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
       {/* Avatar Placeholder */}
       <div className="w-16 h-16 rounded-full bg-beige-100 text-accent flex items-center justify-center mb-4">
         <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>

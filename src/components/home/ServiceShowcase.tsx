@@ -91,7 +91,7 @@ export default function ServiceShowcase() {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <h2 className="text-5xl md:text-6xl lg:text-7xl font-bold text-black">
+          <h2 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold text-black">
             Our Service
           </h2>
           <p className="mt-6 text-base max-w-lg mx-auto leading-relaxed text-black/50">
@@ -111,7 +111,7 @@ export default function ServiceShowcase() {
                   setActiveCategory(cat);
                   setHoveredIndex(null);
                 }}
-                className={`px-8 py-3 text-sm font-medium transition-all duration-500 ${
+                className={`px-5 sm:px-8 py-3 text-sm font-medium transition-all duration-500 ${
                   activeCategory === cat
                     ? 'bg-dark text-white'
                     : 'text-black/50 hover:text-black'

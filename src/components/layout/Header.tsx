@@ -75,7 +75,7 @@ export default function Header() {
               alt={SITE_CONFIG.name}
               width={400}
               height={112}
-              className={`h-[112px] w-auto object-contain transition-all duration-300 ${
+              className={`h-[72px] md:h-[90px] lg:h-[112px] w-auto object-contain transition-all duration-300 ${
                 isScrolled || !isDarkBg ? '' : 'brightness-0 invert'
               }`}
               priority
@@ -148,7 +148,7 @@ export default function Header() {
           {/* Mobile Menu Toggle */}
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="lg:hidden relative w-8 h-8 flex items-center justify-center"
+            className="lg:hidden relative w-11 h-11 flex items-center justify-center"
             aria-label="메뉴 열기"
           >
             <div className="flex flex-col gap-1.5">
@@ -171,7 +171,7 @@ export default function Header() {
         {isMobileMenuOpen && (
           <motion.div
             initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: '100vh' }}
+            animate={{ opacity: 1, height: '100dvh' }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.3 }}
             className="lg:hidden fixed inset-0 top-20 bg-white z-40 overflow-y-auto"

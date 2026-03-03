@@ -62,7 +62,7 @@ export default function PhoneBookingForm() {
 
   return (
     <form onSubmit={handleSubmit} className="space-y-5">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-5">
         <div>
           <label htmlFor="booking-name" className="block text-sm font-medium text-black mb-2">
             이름 <span className="text-red-500">*</span>
@@ -93,7 +93,7 @@ export default function PhoneBookingForm() {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-5">
         <div>
           <label htmlFor="preferred-date" className="block text-sm font-medium text-black mb-2">
             희망 날짜 <span className="text-red-500">*</span>

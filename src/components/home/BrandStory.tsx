@@ -68,7 +68,7 @@ export default function BrandStory() {
                 Brand Story
               </span>
 
-              <h2 className="mt-4 text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-[1.15]">
+              <h2 className="mt-4 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-[1.15]">
                 마음의 변화가
                 <br />
                 시작되는 곳
@@ -121,7 +121,7 @@ export default function BrandStory() {
         </div>
 
         {/* Right - Text with staggered scroll animations */}
-        <div className="flex items-center bg-beige-50 px-8 md:px-16 lg:px-20 py-20 lg:py-0">
+        <div className="flex items-center bg-beige-50 px-6 md:px-16 lg:px-20 py-16 md:py-20 lg:py-0">
           <div>
             <motion.span
               initial={{ opacity: 0, x: -20 }}

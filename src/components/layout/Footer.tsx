@@ -4,8 +4,8 @@ import { SITE_CONFIG, NAV_ITEMS } from '@/lib/constants';
 export default function Footer() {
   return (
     <footer className="bg-dark text-white">
-      <div className="max-w-7xl mx-auto px-6 lg:px-8 py-16 lg:py-20">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+      <div className="max-w-7xl mx-auto px-6 lg:px-8 py-12 md:py-16 lg:py-20">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12">
           {/* Brand */}
           <div className="lg:col-span-1">
             <h3 className="text-xl font-bold mb-4">{SITE_CONFIG.name}</h3>

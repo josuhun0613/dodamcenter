@@ -88,7 +88,7 @@ export default function ProgramPreview() {
             <span className="text-[11px] tracking-[0.4em] text-accent uppercase">
               Growth Programs
             </span>
-            <h2 className="mt-4 text-4xl md:text-5xl font-bold text-black leading-tight">
+            <h2 className="mt-4 text-3xl sm:text-4xl md:text-5xl font-bold text-black leading-tight">
               성장 프로그램
             </h2>
           </motion.div>
@@ -128,7 +128,7 @@ export default function ProgramPreview() {
       {/* 3D Carousel */}
       <div className="relative pb-16 md:pb-20 z-10">
         <div
-          className="relative mx-auto flex justify-center items-center h-[340px] md:h-[420px] lg:h-[470px]"
+          className="relative mx-auto flex justify-center items-center h-[300px] sm:h-[340px] md:h-[420px] lg:h-[470px]"
           style={{ perspective: '1200px' }}
         >
           {programs.map((program, index) => {
@@ -154,7 +154,7 @@ export default function ProgramPreview() {
                   transformStyle: 'preserve-3d',
                   pointerEvents: isVisible ? 'auto' : 'none',
                 }}
-                className={`absolute w-[260px] md:w-[320px] lg:w-[360px] ${!isActive ? 'cursor-pointer' : ''}`}
+                className={`absolute w-[230px] sm:w-[260px] md:w-[320px] lg:w-[360px] ${!isActive ? 'cursor-pointer' : ''}`}
                 onClick={() => !isActive && setActiveIndex(index)}
               >
                 <div className={!isActive ? 'pointer-events-none' : ''}>

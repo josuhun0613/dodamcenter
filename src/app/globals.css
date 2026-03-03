@@ -57,8 +57,10 @@
   font-display: swap;
 }
 
-html {
-  scroll-behavior: smooth;
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
 }
 
 body {
@@ -67,6 +69,7 @@ body {
   color: var(--color-black);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 ::selection {
@@ -118,6 +121,12 @@ body {
 
 .flip-card:hover .flip-card-inner {
   transform: rotateY(180deg);
+}
+
+@media (hover: none) {
+  .flip-card:active .flip-card-inner {
+    transform: rotateY(180deg);
+  }
 }
 
 .flip-card-front,

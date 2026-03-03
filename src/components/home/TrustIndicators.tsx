@@ -72,12 +72,12 @@ export default function TrustIndicators() {
           className="mb-16"
         >
           <span className="text-[11px] tracking-[0.4em] text-white/55 uppercase">Trust</span>
-          <h2 className="mt-4 text-4xl md:text-5xl font-bold text-white">
+          <h2 className="mt-4 text-3xl sm:text-4xl md:text-5xl font-bold text-white">
             숫자로 보는 도담센터
           </h2>
         </motion.div>
 
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-16">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 lg:gap-16">
           {TRUST_INDICATORS.map((item, index) => (
             <motion.div
               key={item.label}
@@ -86,7 +86,7 @@ export default function TrustIndicators() {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: index * 0.15 }}
             >
-              <div className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-3">
+              <div className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-2 sm:mb-3">
                 <Counter value={item.value} suffix={item.suffix} />
               </div>
               <div className="w-8 h-px bg-accent mb-3" />

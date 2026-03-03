@@ -34,12 +34,12 @@ export default function MarqueeSection() {
           {Array.from({ length: 10 }).map((_, i) => (
             <span
               key={i}
-              className="text-4xl md:text-6xl lg:text-7xl font-bold text-black tracking-tight mx-6 md:mx-10 select-none"
+              className="text-2xl sm:text-3xl md:text-6xl lg:text-7xl font-bold text-black tracking-tight mx-4 sm:mx-6 md:mx-10 select-none"
             >
               YOUTH GROWTH PROJECT
-              <span className="mx-6 md:mx-10 text-beige-200 font-light">/</span>
+              <span className="mx-4 sm:mx-6 md:mx-10 text-beige-200 font-light">/</span>
               마음 성장 전문 상담
-              <span className="mx-6 md:mx-10 text-beige-200 font-light">/</span>
+              <span className="mx-4 sm:mx-6 md:mx-10 text-beige-200 font-light">/</span>
             </span>
           ))}
         </div>

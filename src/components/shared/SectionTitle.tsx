@@ -22,11 +22,11 @@ export default function SectionTitle({
           {subtitle}
         </span>
       )}
-      <h2 className={`mt-3 text-3xl md:text-4xl lg:text-5xl font-semibold leading-tight ${light ? 'text-white' : 'text-black'}`}>
+      <h2 className={`mt-3 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold leading-tight ${light ? 'text-white' : 'text-black'}`}>
         {title}
       </h2>
       {description && (
-        <p className={`mt-4 text-lg max-w-2xl ${align === 'center' ? 'mx-auto' : ''} ${light ? 'text-beige-200' : 'text-black-light'}`}>
+        <p className={`mt-4 text-base sm:text-lg max-w-2xl ${align === 'center' ? 'mx-auto' : ''} ${light ? 'text-beige-200' : 'text-black-light'}`}>
           {description}
         </p>
       )}
