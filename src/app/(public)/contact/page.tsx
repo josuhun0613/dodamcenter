@@ -1,12 +1,12 @@
 import { Metadata } from 'next';
 import AnimatedSection from '@/components/shared/AnimatedSection';
 import InquiryForm from '@/components/forms/InquiryForm';
-import PhoneBookingForm from '@/components/forms/PhoneBookingForm';
+
 import { SITE_CONFIG } from '@/lib/constants';
 
 export const metadata: Metadata = {
   title: '상담 문의',
-  description: '도담센터 상담 문의 및 전화 상담 예약. 전문 상담사가 정성껏 답변드립니다.',
+  description: '도담센터 상담 문의. 전문 상담사가 정성껏 답변드립니다.',
 };
 
 export default function ContactPage() {
@@ -105,26 +105,6 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* Phone Booking */}
-      <section className="py-24 md:py-32 bg-beige-50">
-        <div className="max-w-3xl mx-auto px-6 lg:px-8">
-          <AnimatedSection>
-            <div className="text-center mb-12">
-              <span className="text-sm tracking-[0.2em] uppercase font-medium text-accent">Phone Consultation</span>
-              <h2 className="mt-3 text-3xl md:text-4xl font-semibold text-black">전화 상담 예약</h2>
-              <p className="mt-4 text-lg text-black-light">
-                전화로 먼저 상담받고 싶으시다면 아래에서 예약해주세요.
-              </p>
-            </div>
-          </AnimatedSection>
-
-          <AnimatedSection>
-            <div className="bg-white rounded-2xl p-8 md:p-10 border border-beige-200">
-              <PhoneBookingForm />
-            </div>
-          </AnimatedSection>
-        </div>
-      </section>
     </>
   );
 }

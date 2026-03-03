@@ -47,8 +47,8 @@ export default function CTASection() {
             <Button href="/contact" size="lg" variant="custom" className="bg-white text-black hover:bg-white/90 px-10">
               상담 신청하기
             </Button>
-            <Button href="tel:010-1234-5678" size="lg" variant="custom" className="text-white border border-white/20 hover:bg-white/10">
-              전화 상담 예약
+            <Button href="/counseling" size="lg" variant="custom" className="text-white border border-white/20 hover:bg-white/10">
+              서비스 보기
             </Button>
           </div>
         </motion.div>
