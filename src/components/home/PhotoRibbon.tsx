@@ -29,7 +29,7 @@ const NUM_PTS = 400;
 const RIBBON_COLOR = { r: 245, g: 242, b: 237 };
 const SHADOW_COLOR = { r: 0, g: 0, b: 0 };
 const TEXT_LABEL = 'DODAM CENTER · ';
-const TEXT_COUNT = 10; // number of text labels around the ribbon
+const TEXT_COUNT = 14; // number of text labels around the ribbon
 const TEXT_SPEED = 0.00015; // radians per ms for text animation
 
 function drawRibbon(
@@ -180,7 +180,7 @@ function drawRibbon(
 
   const textPhase = time * TEXT_SPEED;
   // Approximate angular width of one character on the ribbon
-  const CHAR_ANGLE = 0.028; // radians per character
+  const CHAR_ANGLE = 0.018; // radians per character
 
   for (let n = 0; n < TEXT_COUNT; n++) {
     const labelStartT = (n / TEXT_COUNT) * Math.PI * 2 + textPhase;
