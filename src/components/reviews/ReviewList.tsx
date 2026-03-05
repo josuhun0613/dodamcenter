@@ -27,17 +27,9 @@ export default function ReviewList({ reviews }: ReviewListProps) {
 
   return (
     <>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        {currentReviews.map((review, index) => (
-          <AnimatedSection key={review.id} delay={index * 0.06}>
-            <ReviewCard {...review} />
-          </AnimatedSection>
-        ))}
-      </div>
-
       {/* Pagination */}
       {totalPages > 1 && (
-        <div className="mt-12 flex items-center justify-center gap-2">
+        <div className="mb-10 flex items-center justify-center gap-2">
           <button
             onClick={() => setCurrentPage((p) => Math.max(1, p - 1))}
             disabled={currentPage === 1}
@@ -67,6 +59,14 @@ export default function ReviewList({ reviews }: ReviewListProps) {
           </button>
         </div>
       )}
+
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        {currentReviews.map((review, index) => (
+          <AnimatedSection key={review.id} delay={index * 0.06}>
+            <ReviewCard {...review} />
+          </AnimatedSection>
+        ))}
+      </div>
     </>
   );
 }

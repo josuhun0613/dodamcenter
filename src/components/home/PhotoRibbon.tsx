@@ -225,6 +225,7 @@ function drawRibbon(
       ctx.rotate(angle);
       ctx.font = `800 ${fontSize}px Pretendard,sans-serif`;
       ctx.globalAlpha = opacity * 0.85;
+      ctx.fillStyle = '#1a1a1a';
       ctx.fillText(TEXT_LABEL[ci], 0, 0);
       ctx.restore();
     }

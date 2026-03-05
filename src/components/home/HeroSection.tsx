@@ -92,13 +92,16 @@ export default function HeroSection() {
         />
       </motion.div>
 
-      {/* Dark overlay (auto, phase 6) */}
+      {/* Dark overlay — left side darker for text readability, right side lighter to show photo */}
       <motion.div
-        className="absolute inset-0 z-[2] bg-gradient-to-b from-dark/40 via-dark/55 to-dark/70"
+        className="absolute inset-0 z-[2]"
         initial={{ opacity: 0 }}
         animate={{ opacity: phase >= 6 ? 1 : 0 }}
         transition={{ duration: 1.2, ease: 'easeOut' }}
-      />
+      >
+        <div className="absolute inset-0 bg-gradient-to-r from-dark/80 via-dark/50 to-dark/20" />
+        <div className="absolute inset-0 bg-gradient-to-b from-dark/30 via-transparent to-dark/40" />
+      </motion.div>
 
       {/* SVG Frame lines (only visible before photo) */}
       <motion.div
@@ -153,21 +156,34 @@ export default function HeroSection() {
         animate={phase >= 7 ? { opacity: 1, y: 0 } : { opacity: 0, y: 40 }}
         transition={{ duration: 1.0, ease: 'easeOut' }}
       >
-        <span className="text-[11px] md:text-xs tracking-[0.4em] text-white/80 uppercase mb-6">
-          Dodam Counseling Center
-        </span>
+        <div className="flex items-stretch gap-6 md:gap-8">
+          {/* Decorative vertical line */}
+          <motion.div
+            className="hidden sm:block w-px bg-gradient-to-b from-transparent via-white/40 to-transparent flex-shrink-0"
+            initial={{ scaleY: 0 }}
+            animate={phase >= 7 ? { scaleY: 1 } : { scaleY: 0 }}
+            transition={{ duration: 0.8, delay: 0.3, ease: 'easeOut' }}
+            style={{ originY: 0 }}
+          />
 
-        <h2 className="text-3xl sm:text-4xl md:text-7xl lg:text-8xl font-bold text-white leading-[1.1] tracking-tight">
-          도담, 성장의
-          <br />
-          기반을 세우는 곳
-        </h2>
+          <div>
+            <span className="text-[11px] md:text-xs tracking-[0.4em] text-white/80 uppercase mb-6 block">
+              Dodam Counseling Center
+            </span>
 
-        <p className="mt-8 text-base md:text-lg text-white/70 max-w-lg leading-relaxed">
-          내면의 안정과 삶의 방향을
-          <br className="hidden sm:inline" />
-          함께 세우는 상담센터
-        </p>
+            <h2 className="text-3xl sm:text-4xl md:text-7xl lg:text-8xl font-bold text-white leading-[1.1] tracking-tight">
+              도담, 성장의
+              <br />
+              기반을 세우는 곳
+            </h2>
+
+            <p className="mt-8 text-base md:text-lg text-white/70 max-w-lg leading-relaxed">
+              내면의 안정과 삶의 방향을
+              <br className="hidden sm:inline" />
+              함께 세우는 상담센터
+            </p>
+          </div>
+        </div>
       </motion.div>
 
       {/* Scroll indicator */}
