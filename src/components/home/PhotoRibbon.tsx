@@ -32,10 +32,10 @@ const TEXT_LABEL = 'DODAM COUNSELING CENTER · ';
 const CHAR_ANGLE_VAL = 0.022; // radians per character (letter spacing)
 const TEXT_COUNT = Math.min(
   Math.ceil((Math.PI * 2) / (CHAR_ANGLE_VAL * TEXT_LABEL.length)),
-  6, // cap to reduce draw calls
+  4, // cap to reduce draw calls
 );
 const TEXT_SPEED = 0.00015; // radians per ms for text animation
-const IDLE_FPS = 24;
+const IDLE_FPS = 48;
 const IDLE_INTERVAL = 1000 / IDLE_FPS;
 
 function drawRibbon(
@@ -183,21 +183,22 @@ function drawRibbon(
   ctx.save();
   ctx.textAlign = 'center';
   ctx.textBaseline = 'middle';
+  ctx.fillStyle = '#1a1a1a';
 
   const textPhase = time * TEXT_SPEED;
-  // Approximate angular width of one character on the ribbon
   const CHAR_ANGLE = CHAR_ANGLE_VAL;
+
+  // Collect all visible characters first, then batch-render by fontSize
+  type CharEntry = { ch: string; sx: number; sy: number; angle: number; fontSize: number; opacity: number };
+  const charsBySize = new Map<number, CharEntry[]>();
 
   for (let n = 0; n < TEXT_COUNT; n++) {
     const labelStartT = (n / TEXT_COUNT) * Math.PI * 2 + textPhase;
 
-    // Draw each character individually along the curve
     for (let ci = 0; ci < TEXT_LABEL.length; ci++) {
       const charT = labelStartT + ci * CHAR_ANGLE;
-      // Normalize to [0, 2π]
       const t = ((charT % (Math.PI * 2)) + Math.PI * 2) % (Math.PI * 2);
 
-      // Position this character on the ribbon helix
       const px = RIBBON_R * Math.sin(t);
       const py = WAVE_AMP * Math.sin(WAVE_FREQ * t);
       const pz = RIBBON_R * Math.cos(t);
@@ -208,7 +209,6 @@ function drawRibbon(
       const opacity = zOpacity(charPos.z);
       if (opacity < 0.05) continue;
 
-      // Tangent for rotation
       const dt = 0.015;
       const nt = t + dt;
       const nx = RIBBON_R * Math.sin(nt);
@@ -220,13 +220,21 @@ function drawRibbon(
       const angle = Math.atan2(nextPos.sy - charPos.sy, nextPos.sx - charPos.sx);
       const fontSize = Math.round(Math.max(10, 14 * charPos.s));
 
+      let arr = charsBySize.get(fontSize);
+      if (!arr) { arr = []; charsBySize.set(fontSize, arr); }
+      arr.push({ ch: TEXT_LABEL[ci], sx: charPos.sx, sy: charPos.sy, angle, fontSize, opacity });
+    }
+  }
+
+  // Render grouped by fontSize (minimizes ctx.font changes)
+  for (const [fontSize, chars] of charsBySize) {
+    ctx.font = `800 ${fontSize}px Pretendard,sans-serif`;
+    for (const c of chars) {
+      ctx.globalAlpha = c.opacity * 0.85;
       ctx.save();
-      ctx.translate(charPos.sx, charPos.sy);
-      ctx.rotate(angle);
-      ctx.font = `800 ${fontSize}px Pretendard,sans-serif`;
-      ctx.globalAlpha = opacity * 0.85;
-      ctx.fillStyle = '#1a1a1a';
-      ctx.fillText(TEXT_LABEL[ci], 0, 0);
+      ctx.translate(c.sx, c.sy);
+      ctx.rotate(c.angle);
+      ctx.fillText(c.ch, 0, 0);
       ctx.restore();
     }
   }

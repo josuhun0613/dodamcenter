@@ -125,7 +125,7 @@ export default function BrandStory() {
           <motion.div
             initial={{ x: '0%' }}
             animate={{ x: section2Visible ? '105%' : '0%' }}
-            transition={{ duration: 1.6, ease: [0.32, 0.72, 0, 1] }}
+            transition={{ duration: 2.2, ease: [0.32, 0.72, 0, 1] }}
             className="absolute inset-0 bg-beige-50 z-10"
           />
         </div>
@@ -135,7 +135,7 @@ export default function BrandStory() {
           <motion.div
             initial={{ x: 60, opacity: 0 }}
             animate={section2Visible ? { x: 0, opacity: 1 } : { x: 60, opacity: 0 }}
-            transition={{ duration: 1.2, ease: 'easeOut', delay: 0.6 }}
+            transition={{ duration: 1.6, ease: 'easeOut', delay: 0.9 }}
           >
             <span className="inline-block text-[11px] tracking-[0.4em] text-accent uppercase">
               Our Value
