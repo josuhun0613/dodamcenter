@@ -12,7 +12,7 @@ interface ServiceCardProps {
 export default function ServiceCard({ title, description, price, duration, href, icon }: ServiceCardProps) {
   return (
     <Link href={href} className="group block">
-      <div className="bg-white rounded-2xl border border-beige-200 p-5 sm:p-6 md:p-8 transition-all duration-300 hover:bg-dark hover:shadow-lg hover:-translate-y-1 hover:border-accent/30">
+      <div className="bg-white rounded-2xl border border-beige-200 p-5 sm:p-6 md:p-8 transition-all duration-300 group-hover:bg-dark group-hover:shadow-lg group-hover:-translate-y-1 group-hover:border-accent/30">
         <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-xl bg-beige-100 text-accent flex items-center justify-center mb-4 sm:mb-6 group-hover:bg-accent group-hover:text-white transition-all duration-300">
           {icon}
         </div>
