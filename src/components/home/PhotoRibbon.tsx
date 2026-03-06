@@ -5,14 +5,14 @@ import { useRef, useEffect, useState } from 'react';
 import Link from 'next/link';
 
 const photos = [
-  { src: '/images/photos/counseling-1.jpg', position: 'center 20%' },
-  { src: '/images/photos/counseling-2.jpg', position: 'center' },
-  { src: '/images/photos/counseling-3.jpg', position: '35% 30%' },
-  { src: '/images/photos/counseling-4.jpg', position: 'center 30%' },
-  { src: '/images/photos/counseling-5.jpg', position: 'center' },
-  { src: '/images/photos/counseling-6.jpg', position: '55% 25%' },
-  { src: '/images/photos/counseling-7.jpg', position: 'center 20%' },
-  { src: '/images/photos/seminar-5.jpg', position: 'center' },
+  { src: '/images/photos/ribbon-seminar-1.jpg', position: 'center' },
+  { src: '/images/photos/ribbon-seminar-2.jpg', position: 'center' },
+  { src: '/images/photos/ribbon-seminar-3.jpg', position: 'center' },
+  { src: '/images/photos/ribbon-seminar-4.jpg', position: 'center' },
+  { src: '/images/photos/ribbon-seminar-5.jpg', position: 'center' },
+  { src: '/images/photos/ribbon-seminar-6.jpg', position: 'center' },
+  { src: '/images/photos/ribbon-seminar-7.jpg', position: 'center' },
+  { src: '/images/photos/ribbon-seminar-8.jpg', position: 'center' },
 ];
 
 const COUNT = photos.length;

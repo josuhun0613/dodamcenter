@@ -58,7 +58,7 @@ export default function BrandStory() {
             <div
               className="absolute inset-0 bg-cover bg-center"
               style={{
-                backgroundImage: `url('/images/photos/seminar-2.jpg')`,
+                backgroundImage: `url('/images/photos/value-counseling-1.jpg')`,
               }}
             />
             <div className="absolute inset-0 bg-dark/40" />
@@ -118,7 +118,7 @@ export default function BrandStory() {
           <div
             className="absolute inset-0 bg-cover bg-center"
             style={{
-              backgroundImage: `url('/images/photos/counseling-8.jpg')`,
+              backgroundImage: `url('/images/photos/value-counseling-2.jpg')`,
             }}
           />
           {/* Beige curtain that slides away to the right */}

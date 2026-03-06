@@ -11,43 +11,42 @@ const services = [
     title: '개인상담',
     category: '상담',
     description: '라이프사이클에 맞춘 1:1 맞춤 심리상담',
-    image: '/images/photos/counseling-1.jpg',
+    image: '/images/photos/value-counseling-1.jpg',
     href: '/counseling/individual',
   },
   {
     title: '커플상담',
     category: '상담',
     description: '관계 개선과 소통을 위한 전문 상담',
-    image: '/images/photos/counseling-5.jpg',
+    image: '/images/photos/value-counseling-2.jpg',
     href: '/counseling/couple',
   },
   {
     title: '가족상담',
     category: '상담',
     description: '건강한 가족 관계 회복을 지원합니다',
-    image: '/images/photos/counseling-3.jpg',
+    image: '/images/photos/service-couple.jpg',
     href: '/counseling/family',
   },
   {
     title: '그룹상담',
     category: '상담',
     description: '함께 성장하는 그룹 프로그램',
-    image: '/images/photos/seminar-8.jpg',
-    imagePosition: '95% center',
+    image: '/images/photos/ribbon-seminar-5.jpg',
     href: '/counseling/group',
   },
   {
     title: '심리검사',
     category: '프로그램',
     description: '과학적 심리검사로 나를 이해하기',
-    image: '/images/photos/counseling-2.jpg',
+    image: '/images/photos/service-group.jpg',
     href: '/testing',
   },
   {
     title: '성장 프로그램',
     category: '프로그램',
     description: '자기성장과 커리어 발전을 위한 워크숍',
-    image: '/images/photos/seminar-7.jpg',
+    image: '/images/photos/ribbon-seminar-2.jpg',
     href: '/programs',
   },
 ];
@@ -142,7 +141,7 @@ export default function ServiceShowcase() {
                   className="w-full h-full bg-cover scale-110"
                   style={{
                     backgroundImage: `url('${hoveredService.image}')`,
-                    backgroundPosition: hoveredService.imagePosition || 'center',
+                    backgroundPosition: (hoveredService as { imagePosition?: string }).imagePosition || 'center',
                   }}
                 />
                 <div className="absolute inset-0 bg-dark/25 rounded-full" />

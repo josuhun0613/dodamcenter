@@ -88,7 +88,7 @@ export default function HeroSection() {
       >
         <div
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: `url('/images/photos/seminar-6.jpg')` }}
+          style={{ backgroundImage: `url('/images/photos/hero-lobby.jpg')` }}
         />
       </motion.div>
 
