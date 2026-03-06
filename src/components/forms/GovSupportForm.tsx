@@ -4,6 +4,7 @@ import { useState } from 'react';
 import Button from '@/components/shared/Button';
 import SuccessModal from '@/components/shared/SuccessModal';
 import PrivacyConsentSection from './PrivacyConsentSection';
+import { counselorsData } from '@/data/counselors';
 
 const unresolvedIssueOptions = [
   '우울',
@@ -51,6 +52,7 @@ export default function GovSupportForm() {
     birthdate: '',
     address: '',
     referral: '',
+    preferredCounselor: '',
     unresolvedIssues: [] as string[],
     mainConcern: '',
     counselingExpectation: '',
@@ -99,6 +101,7 @@ export default function GovSupportForm() {
           birthdate: '',
           address: '',
           referral: '',
+          preferredCounselor: '',
           unresolvedIssues: [],
           mainConcern: '',
           counselingExpectation: '',
@@ -199,6 +202,25 @@ export default function GovSupportForm() {
             className={inputClass}
             placeholder="시/군/구 까지 입력해주세요"
           />
+        </div>
+
+        {/* 추천 상담사 */}
+        <div>
+          <label htmlFor="gov-counselor" className="block text-sm font-medium text-black mb-2">
+            추천 상담사
+            <span className="text-xs text-black-light/60 ml-2">(선택사항)</span>
+          </label>
+          <select
+            id="gov-counselor"
+            value={formData.preferredCounselor}
+            onChange={(e) => setFormData({ ...formData, preferredCounselor: e.target.value })}
+            className={inputClass}
+          >
+            <option value="">상담사를 선택해주세요 (선택사항)</option>
+            {counselorsData.map((c) => (
+              <option key={c.name} value={c.name}>{c.name} ({c.credentials})</option>
+            ))}
+          </select>
         </div>
 
         {/* 미해결 문제 유형 (multi-checkbox) */}

@@ -52,6 +52,7 @@ export function formatGovSupportMessage(data: {
   birthdate: string;
   address: string;
   referral: string;
+  preferredCounselor?: string;
   unresolvedIssues: string[];
   mainConcern: string;
   counselingExpectation?: string;
@@ -65,6 +66,7 @@ export function formatGovSupportMessage(data: {
     `<b>생년월일:</b> ${data.birthdate}`,
     `<b>주소:</b> ${data.address}`,
     `<b>내방 경위:</b> ${data.referral}`,
+    data.preferredCounselor ? `<b>추천 상담사:</b> ${data.preferredCounselor}` : '',
     `<b>미해결 문제:</b> ${data.unresolvedIssues.join(', ')}`,
     `<b>주 호소 문제:</b> ${data.mainConcern}`,
     data.counselingExpectation ? `<b>상담 기대:</b> ${data.counselingExpectation}` : '',
