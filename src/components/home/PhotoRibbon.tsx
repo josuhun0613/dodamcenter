@@ -19,11 +19,11 @@ const photos = [
 
 const COUNT = photos.length;
 const ANGLE_STEP = 360 / COUNT;
-const RADIUS = 500;
+const RADIUS = 420;
 
 // ─── Canvas ribbon drawing ───────────────────────────────────────────────────
 const PERSP = 1200;
-const RIBBON_R = 450;
+const RIBBON_R = 380;
 const BAND_HALF = 16;
 const WAVE_AMP = 65;
 const WAVE_FREQ = 2; // number of complete waves around the ribbon
@@ -360,7 +360,7 @@ export default function PhotoRibbon() {
         {/* 3D Carousel (photos only) */}
         <div style={{ perspective: '1200px' }} className="relative z-0">
           <motion.div
-            className="relative w-[200px] h-[270px] sm:w-[240px] sm:h-[320px] md:w-[280px] md:h-[380px] preserve-3d"
+            className="relative w-[170px] h-[230px] sm:w-[200px] sm:h-[270px] md:w-[220px] md:h-[300px] preserve-3d"
             style={{ rotateY: rotY, rotateX: rotX, rotateZ: rotZ, willChange: 'transform' }}
           >
             {photos.map((photo, i) => (
