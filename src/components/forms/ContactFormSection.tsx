@@ -10,12 +10,12 @@ export default function ContactFormSection() {
   const [activeForm, setActiveForm] = useState<FormType>('general');
 
   return (
-    <div className="bg-beige-50 rounded-2xl p-8 md:p-10">
+    <div className="bg-beige-50 rounded-2xl p-5 sm:p-8 md:p-10">
       {/* Toggle Buttons */}
-      <div className="flex gap-3 mb-8">
+      <div className="flex gap-2 sm:gap-3 mb-8">
         <button
           onClick={() => setActiveForm('general')}
-          className={`flex-1 py-3 px-4 rounded-full text-sm sm:text-base font-medium transition-all duration-300 cursor-pointer ${
+          className={`flex-1 py-3 px-3 sm:px-4 rounded-full text-xs sm:text-sm md:text-base font-medium transition-all duration-300 cursor-pointer ${
             activeForm === 'general'
               ? 'bg-accent text-white shadow-md'
               : 'bg-white text-black-light border border-beige-200 hover:border-accent/30'
@@ -25,13 +25,13 @@ export default function ContactFormSection() {
         </button>
         <button
           onClick={() => setActiveForm('gov')}
-          className={`flex-1 py-3 px-4 rounded-full text-sm sm:text-base font-medium transition-all duration-300 cursor-pointer ${
+          className={`flex-1 py-3 px-3 sm:px-4 rounded-full text-xs sm:text-sm md:text-base font-medium transition-all duration-300 cursor-pointer break-keep ${
             activeForm === 'gov'
               ? 'bg-accent text-white shadow-md'
               : 'bg-white text-black-light border border-beige-200 hover:border-accent/30'
           }`}
         >
-          도담 청년 응원 패키지
+          청년 응원 패키지
         </button>
       </div>
 
