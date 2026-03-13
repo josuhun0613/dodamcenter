@@ -379,6 +379,9 @@ export default function PhotoRibbon() {
                     backgroundPosition: photo.position,
                   }}
                 />
+                <div className="absolute bottom-3 left-3 bg-dark/60 backdrop-blur-sm text-white text-[10px] sm:text-xs font-medium px-2.5 py-1 rounded-full tracking-wider">
+                  워크샵
+                </div>
               </div>
             ))}
           </motion.div>
