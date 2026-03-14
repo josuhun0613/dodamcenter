@@ -5,15 +5,15 @@ import { useRef, useEffect, useState } from 'react';
 import Link from 'next/link';
 
 const photos = [
-  { src: '/images/photos/seminar-1.jpg', position: 'center', label: '마음 챙김 워크숍' },
+  { src: '/images/photos/seminar-1.jpg', position: 'center', label: 'AI 세미나' },
   { src: '/images/photos/seminar-2.jpg', position: '85% center', label: '커뮤니케이션 스킬' },
   { src: '/images/photos/seminar-3.jpg', position: 'center', label: '스트레스 관리법' },
   { src: '/images/photos/seminar-4.jpg', position: 'center', label: '자기이해 워크숍' },
   { src: '/images/photos/seminar-5.jpg', position: '60% center', label: '감정 코칭' },
   { src: '/images/photos/seminar-6.jpg', position: '70% center', label: '관계 회복 세미나' },
   { src: '/images/photos/seminar-7.jpg', position: 'center', label: '퍼스널 브랜딩' },
-  { src: '/images/photos/seminar-8.jpg', position: 'right center', label: '번아웃 예방' },
-  { src: '/images/photos/seminar-9.jpg', position: '65% center', label: '커리어 리디자인' },
+  { src: '/images/photos/seminar-8.jpg', position: 'right center', label: '마인드셋' },
+  { src: '/images/photos/seminar-9.jpg', position: '65% center', label: '나를 알아가는 여행' },
   { src: '/images/photos/seminar-10.jpg', position: 'center', label: '부모-자녀 소통' },
 ];
 
