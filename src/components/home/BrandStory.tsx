@@ -116,7 +116,7 @@ export default function BrandStory() {
         {/* Left - Image with curtain reveal */}
         <div className="relative h-[40vh] lg:h-auto overflow-hidden">
           <div
-            className="absolute inset-0 bg-cover bg-center"
+            className="absolute inset-0 bg-cover bg-left"
             style={{
               backgroundImage: `url('/images/photos/value-counseling-2.jpg')`,
             }}
