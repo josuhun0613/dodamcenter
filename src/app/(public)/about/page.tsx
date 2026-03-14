@@ -13,7 +13,7 @@ const milestones = [
   { date: '2023.09', title: '성장 프로그램 런칭', description: '자기개발, 퍼스널 브랜딩 프로그램 시작' },
   { date: '2024.01', title: '누적 상담 500건 돌파', description: '청년 상담 분야 신뢰 구축' },
   { date: '2024.05', title: '기업 EAP 서비스 시작', description: '직장인 심리 건강 지원 서비스 확대' },
-  { date: '2024.09', title: '정부지원 사업 파트너 선정', description: '청년 심리 지원 정부사업 공식 파트너' },
+  { date: '2024.09', title: '청년 응원 패키지 런칭', description: '청년 심리 건강을 위한 특별 지원 프로그램 시작' },
   { date: '2025.02', title: '누적 상담 2,000건 돌파', description: '상담사 30명 이상 규모로 성장' },
   { date: '2025.08', title: '그룹 상담 프로그램 확대', description: '감정 다루기, 관계의 기술 등 다양한 워크숍 운영' },
   { date: '2026.01', title: '누적 상담 5,000건 돌파', description: '청년 상담 전문 센터로 자리매김' },

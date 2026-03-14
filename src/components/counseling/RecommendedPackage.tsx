@@ -15,8 +15,8 @@ const packages = [
   },
   {
     title: '추천 패키지',
-    badge: '정부지원 대상',
-    description: '정부지원 사업 추천 대상자로 선정 시 무료로 제공되는 프리미엄 패키지',
+    badge: '청년 응원',
+    description: '도담 청년 응원 패키지 대상자로 선정 시 특별 할인으로 제공되는 프리미엄 패키지',
     items: ['개인상담 8회', '그룹상담 4회', '퍼스널 브랜딩 프로그램', '심리검사 2회', '1:1 커리어 코칭', '사후 관리 3개월'],
     price: 0,
     originalPrice: 800000,
@@ -103,7 +103,7 @@ export default function RecommendedPackage() {
 
                 {pkg.isGovSupported ? (
                   <Button href="/contact" variant="primary" className="w-full">
-                    무료 대상 확인 신청
+                    청년 응원 패키지 신청
                   </Button>
                 ) : (
                   <Button href="/contact" variant="outline" className="w-full group-hover:bg-accent group-hover:text-white group-hover:border-accent">
