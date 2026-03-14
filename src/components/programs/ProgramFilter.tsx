@@ -28,7 +28,7 @@ const programs = [
     description: '감정을 인식하고 건강하게 표현하는 방법을 배워 정서적 안정감을 높입니다.',
     price: '90,000원',
     duration: '3주 과정',
-    image: '/images/photos/counseling-7.jpg',
+    image: '/images/photos/seminar-18.jpg',
   },
   {
     title: '커리어 리디자인',
