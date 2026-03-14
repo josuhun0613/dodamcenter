@@ -14,7 +14,7 @@ const photos = [
   { src: '/images/photos/seminar-7.jpg', position: 'center', label: '퍼스널 브랜딩' },
   { src: '/images/photos/seminar-8.jpg', position: 'right center', label: '마인드셋' },
   { src: '/images/photos/seminar-9.jpg', position: '65% center', label: '나를 알아가는 여행' },
-  { src: '/images/photos/seminar-18.jpg', position: 'center', label: '감정 다루기 워크숍' },
+  { src: '/images/photos/seminar-18.jpg', position: '30% center', label: '감정 다루기 워크숍' },
 ];
 
 const COUNT = photos.length;
