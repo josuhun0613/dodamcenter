@@ -30,7 +30,7 @@ const WAVE_FREQ = 1.5;
 const NUM_PTS = 200;
 const RIBBON_COLOR = { r: 245, g: 242, b: 237 };
 const SHADOW_COLOR = { r: 0, g: 0, b: 0 };
-const TEXT_LABEL = 'DODAM COUNSELING CENTER · ';
+const TEXT_LABEL = 'DAON COUNSELING CENTER · ';
 const CHAR_ANGLE_VAL = 0.022; // radians per character (letter spacing)
 const TEXT_COUNT = Math.min(
   Math.ceil((Math.PI * 2) / (CHAR_ANGLE_VAL * TEXT_LABEL.length)),

@@ -4,7 +4,7 @@ import ReviewList from '@/components/reviews/ReviewList';
 
 export const metadata: Metadata = {
   title: '상담 후기',
-  description: '도담상담센터 상담을 경험한 내담자분들의 솔직한 후기입니다.',
+  description: '다온상담센터 상담을 경험한 내담자분들의 솔직한 후기입니다.',
 };
 
 const sampleReviews = [
@@ -68,7 +68,7 @@ const sampleReviews = [
     id: '4',
     clientInitial: '정○○',
     counselingType: '개인상담',
-    content: '저 원래 눈치를 엄~청 보는 스타일이었거든요. 자존감이 바닥이라 늘 남들 신경 쓰면서 살았는데, 8회 상담 받고 나니까 확실히 달라진 게 느껴져요. 제 삶의 주인이 된 느낌이랄까? 예를 들면 예전엔 친구가 연락 안 하면 "나한테 화났나?" 이러면서 혼자 전전긍긍했거든요ㅠ 근데 이젠 "바쁜가 보다~" 하고 넘길 수 있어요. 이게 별거 아닌 것 같지만 저한테는 엄청난 변화예요!! 도담센터 선생님들 진짜 감사합니다 ^^',
+    content: '저 원래 눈치를 엄~청 보는 스타일이었거든요. 자존감이 바닥이라 늘 남들 신경 쓰면서 살았는데, 8회 상담 받고 나니까 확실히 달라진 게 느껴져요. 제 삶의 주인이 된 느낌이랄까? 예를 들면 예전엔 친구가 연락 안 하면 "나한테 화났나?" 이러면서 혼자 전전긍긍했거든요ㅠ 근데 이젠 "바쁜가 보다~" 하고 넘길 수 있어요. 이게 별거 아닌 것 같지만 저한테는 엄청난 변화예요!! 다온센터 선생님들 진짜 감사합니다 ^^',
     rating: 5,
     createdAt: '2025.08.22',
   },
@@ -302,7 +302,7 @@ export default function ReviewsPage() {
   return (
     <>
       {/* Hero */}
-      <section className="pt-32 pb-20 md:pt-40 md:pb-28 bg-beige-50">
+      <section className="pt-32 pb-20 md:pt-40 md:pb-28 bg-sage-50">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <AnimatedSection>
             <div className="max-w-3xl">
@@ -311,7 +311,7 @@ export default function ReviewsPage() {
                 상담 후기
               </h1>
               <p className="mt-6 text-lg md:text-xl text-black-light leading-relaxed">
-                도담상담센터와 함께 변화를 경험한 분들의 이야기입니다.
+                다온상담센터와 함께 변화를 경험한 분들의 이야기입니다.
               </p>
             </div>
           </AnimatedSection>
@@ -319,7 +319,7 @@ export default function ReviewsPage() {
       </section>
 
       {/* Stats */}
-      <section className="py-12 bg-white border-b border-beige-200">
+      <section className="py-12 bg-white border-b border-sage-200">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="flex flex-wrap justify-center gap-8 md:gap-16">
             <div className="text-center">

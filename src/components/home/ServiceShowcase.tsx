@@ -79,7 +79,7 @@ export default function ServiceShowcase() {
     <section
       ref={sectionRef}
       className={`py-16 md:py-24 lg:py-32 transition-colors duration-700 ease-in-out ${
-        isScrolled ? 'bg-beige-100' : 'bg-white'
+        isScrolled ? 'bg-sage-100' : 'bg-white'
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
@@ -103,7 +103,7 @@ export default function ServiceShowcase() {
 
         {/* Category Tabs */}
         <div className="flex justify-center mb-16">
-          <div className="inline-flex rounded-full overflow-hidden border border-beige-300/50">
+          <div className="inline-flex rounded-full overflow-hidden border border-sage-300/50">
             {categories.map((cat) => (
               <button
                 key={cat}
@@ -160,7 +160,7 @@ export default function ServiceShowcase() {
             >
               <Link
                 href={service.href}
-                className="group block border-t border-beige-200 py-8 md:py-10"
+                className="group block border-t border-sage-200 py-8 md:py-10"
                 onMouseEnter={(e) => {
                   setHoveredIndex(index);
                   if (listRef.current) {
@@ -205,7 +205,7 @@ export default function ServiceShowcase() {
               </Link>
             </motion.div>
           ))}
-          <div className="border-t border-beige-200" />
+          <div className="border-t border-sage-200" />
         </div>
       </div>
     </section>
