@@ -16,7 +16,7 @@ const packages = [
   {
     title: '추천 패키지',
     badge: '청년 응원',
-    description: '도담 청년 응원 패키지 대상자로 선정 시 특별 할인으로 제공되는 프리미엄 패키지',
+    description: '다온 청년 응원 패키지 대상자로 선정 시 특별 할인으로 제공되는 프리미엄 패키지',
     items: ['개인상담 8회', '그룹상담 4회', '퍼스널 브랜딩 프로그램', '심리검사 2회', '1:1 커리어 코칭', '사후 관리 3개월'],
     price: 0,
     originalPrice: 800000,
@@ -36,7 +36,7 @@ const packages = [
 
 export default function RecommendedPackage() {
   return (
-    <section className="py-24 md:py-32 bg-beige-50">
+    <section className="py-24 md:py-32 bg-sage-50">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <AnimatedSection>
           <div className="text-center mb-16">
@@ -52,7 +52,7 @@ export default function RecommendedPackage() {
           {packages.map((pkg, index) => (
             <AnimatedSection key={pkg.title} delay={index * 0.15}>
               <div className={`group relative rounded-2xl p-5 sm:p-6 md:p-8 h-full flex flex-col transition-all duration-300 bg-white hover:bg-dark ${
-                pkg.highlight ? 'border-2 border-accent' : 'border border-beige-200'
+                pkg.highlight ? 'border-2 border-accent' : 'border border-sage-200'
               }`}>
                 {pkg.badge && (
                   <span className="absolute -top-3 left-1/2 -translate-x-1/2 bg-accent text-white text-xs font-bold px-4 py-1.5 rounded-full">

@@ -38,11 +38,11 @@ export default function HeroSection() {
 
           <div>
             <span className="text-[11px] md:text-xs tracking-[0.4em] text-white/80 uppercase mb-6 block">
-              Dodam Counseling Center
+              Daon Counseling Center
             </span>
 
             <h2 className="text-3xl sm:text-4xl md:text-7xl lg:text-8xl font-bold text-white leading-[1.1] tracking-tight">
-              도담, 성장의
+              다온, 성장의
               <br />
               기반을 세우는 곳
             </h2>
