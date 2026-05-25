@@ -25,7 +25,7 @@
 ### 1-2. Firebase Auth (인증)
 
 - 관리자 이메일/비밀번호 인증
-- 현재: 하드코딩된 인증정보 (`admin@daoncenter.kr / daon2025!`)
+- 현재: 하드코딩된 인증정보 (`admin@daoncounseling.kr / daon2025!`)
 - 목표: Firebase Auth로 전환, 보안 강화
 
 ### 1-3. Firebase Storage (파일)

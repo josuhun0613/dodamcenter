@@ -60,7 +60,7 @@ export default function AdminLoginPage() {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               className="w-full px-4 py-3 rounded-xl border border-sage-200 bg-white text-black focus:outline-none focus:ring-2 focus:ring-accent/30 focus:border-accent transition-colors"
-              placeholder="admin@daoncenter.kr"
+              placeholder="admin@daoncounseling.kr"
             />
           </div>
 

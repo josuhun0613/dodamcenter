@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 
-const ADMIN_EMAIL = 'admin@daoncenter.kr';
+const ADMIN_EMAIL = 'admin@daoncounseling.kr';
 const ADMIN_PASSWORD = 'daon2025!';
 
 export async function POST(request: NextRequest) {
